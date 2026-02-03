@@ -1,0 +1,50 @@
+# Financial Fraud Detection using Machine Learning
+
+## Overview
+This project demonstrates an end-to-end machine learning pipeline to detect fraudulent financial transactions using real-world transaction data. The system is designed to proactively identify fraud and support business decision-making.
+
+## Dataset
+The dataset consists of more than 3.1 million financial transactions with features such as transaction type, transaction amount, sender and receiver balances, and a fraud label (`isFraud`).
+
+## Objective
+The main objective of this project is to:
+- Predict whether a transaction is fraudulent or not.
+- Analyze transaction patterns and identify key fraud indicators.
+- Provide actionable insights for fraud prevention.
+
+## Technologies Used
+- Python  
+- Pandas, NumPy  
+- Matplotlib, Seaborn  
+- Scikit-learn  
+- XGBoost  
+
+## Model Used
+XGBoost Classifier (Gradient Boosting Algorithm)
+
+## Model Performance
+- Accuracy: 99.98%  
+- ROC-AUC: 0.993  
+- Precision (Fraud): 97%  
+- Recall (Fraud): 68%  
+
+Due to class imbalance, recall and ROC-AUC are considered more important than accuracy.
+
+## Key Insights
+- Fraud mainly occurs in TRANSFER and CASH_OUT transactions.
+- High transaction amount is a strong indicator of fraud.
+- Sudden changes in account balances often signal fraudulent behavior.
+
+## Business Impact
+This system can help financial institutions:
+- Detect fraud in real-time.
+- Reduce financial losses.
+- Improve transaction security and customer trust.
+
+## Future Improvements
+- Improve fraud recall using threshold tuning and cost-sensitive learning.
+- Deploy the model as a real-time web application.
+- Integrate with streaming transaction systems.
+
+## Author
+Mukul Mehta
